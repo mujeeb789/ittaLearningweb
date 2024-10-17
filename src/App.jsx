@@ -8,13 +8,16 @@ import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
 import Blogs from "./pages/Blogs";
 import Contacts from "./pages/Contacts";
-import Teams from "./pages/Teams";
+import Team from "./pages/Team";
 
 const App = () => {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
+        <div className="sticky top-0 z-20">
         <Header />
+
+        </div>
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -23,7 +26,7 @@ const App = () => {
             <Route path="/Courses" element={<Courses />} />
             <Route path="/Blog" element={<Blogs />} />
             <Route path="/Contacts" element={<Contacts />} />
-            <Route path="/Teams" element={<Teams />} />
+            <Route path="/Team" element={<Team />} />
           </Routes>
         </main>
         <Footer />

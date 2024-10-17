@@ -11,8 +11,8 @@ function Header() {
     setIsSidebarOpen(!isSidebarOpen);
   };
   return (
-    <main className="relative ">
-      <div className="px-5 h-[9vh]  bg-[#080a54]  w-full overflow-y-hidden items-center  text-white  flex justify-between">
+    <main className="static top-0 ">
+      <div className="px-5 h-[9vh] relative  bg-[#080a54]  w-full overflow-y-hidden items-center  text-white  flex justify-between">
         <button className="sm:hidden" onClick={toggleSidebar}>
           <BsThreeDotsVertical />
         </button>
@@ -23,6 +23,7 @@ function Header() {
         <nav className=" hidden md:flex lg:gap-10  ">
           {navs.map((item, index) => (
             <NavLink
+            key={index}
               to={item.link}
               className={({ isActive }) =>
                 isActive

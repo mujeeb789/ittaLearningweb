@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function TeamCard({ team }) {
   return (
-    <main className="w-[20%] rounded-lg hover:shadow-2xl pb-5 my-8 shadow-md flex items-center overflow-hidden gap-2 flex-col">
+    <main className="lg:w-[20%] w-[40%] md rounded-lg hover:shadow-2xl pb-5 my-2 shadow-md flex items-center overflow-hidden gap-2 flex-col">
         <div className="h-fit w-full overflow-hidden ">
 
       <img src={team.image} width={150} height={250} className=" transition-all duration-300 w-full h-full hover:scale-125" />
