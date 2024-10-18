@@ -6,7 +6,13 @@ import TeamCard from './TeamCard'
 function TeamComponent() {
   return (
     <div className="flex flex-col items-center  ">
-    <h2 className="text-2xl font-bold ">Our Team</h2>
+     
+
+    <h2 className="text-5xl font-bold ">Our Team</h2>
+    <p className='text-center text-xs w-[80%] my-10'>
+      We are a team of passionate and dedicated software developers, focused on providing innovative solutions for businesses. Our team members have a strong background in computer science, have a keen eye for detail, and are always eager to learn and improve. We are here to help you achieve your goals and create lasting impact on your business.
+    </p>
+    
 
     <div className="flex w-full flex-wrap justify-between items-center px-10 my-5">
       <div className="flex flex-wrap gap-8 w-full justify-center items-center">

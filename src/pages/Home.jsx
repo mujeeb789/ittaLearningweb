@@ -5,13 +5,16 @@ import { Link } from "react-router-dom";
 import TeamComponent from "../components/TeamComponent";
 import Banner from "../components/Banner";
 import CourseNav from "../components/CoursesComponent";
+import { coursesOffered } from "../constants/courses";
 
 function Home() {
   return (
     <main>
       <Banner />
       <CourseNav />
-     <TeamComponent />
+      
+
+      <TeamComponent />
     </main>
   );
 }

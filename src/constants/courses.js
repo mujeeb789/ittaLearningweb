@@ -1,4 +1,5 @@
 import course from "../assets/images/course.jpeg";
+import machine from "../assets/images/machine.jpg"
 
 
 export const coursesOffered = [
@@ -18,7 +19,7 @@ export const coursesOffered = [
       instructor: "Jane Smith",
       duration: "10 weeks",
       category: "Data Science",
-      image:course
+  image:machine
 
     },
     {

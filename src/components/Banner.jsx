@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import image from "../assets/images/image.jpg"; // Replace with correct path
 import image2 from "../assets/images/image2.jpg"; // Replace with correct path
+import { TypeAnimation } from "react-type-animation";
 
 const images = [image, image2];
 
@@ -18,51 +19,56 @@ function Banner() {
   }, [images.length, interval]);
 
   return (
-    <main className="">
-      <div className="flex items-center flex-col justify-center w-full">
-        <div className="overflow-hidden w-full">
+    <div className="relative w-full h-[75vh] lg:h-screen overflow-hidden">
+      {/* Sliding Background Images */}
+      <div
+        className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
           <div
-            className="flex w-full relative transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className="w-full lg:h-full rounded-lg shadow-xl flex items-center justify-center flex-shrink-0"
-              >
-                <img
-                  src={image}
-                  alt={`Slide ${index}`}
-                  className="w-full lg:h-screen"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Overlay Text */}
-          <div className="flex w-full absolute flex-col bottom-0 top-0 left-0 right-0 px-8 lg:gap-20 justify-center bg-[#080b54a5] z-10 gap-5 lg:h-full h-1/2">
-            <p className="text-white clear-start text-2xl lg:text-4xl font-bold">ITTA</p>
-            <p className="text-pink-600 font-bold lg:text-[60px] text-3xl">
-              Empower Your Tech Journey
-            </p>
-            <p className="text-white lg:text-xl text-sm max-w-xl">
-              Join a community of tech enthusiasts and lifelong learners eager
-              to explore, build, and master new skills in cutting-edge
-              technologies. Whether you're into coding, design, or digital
-              marketing, we provide top-notch courses to fuel your passion.
-            </p>
-            <div>
-              <Link
-                to={"/signup"}
-                className="bg-pink-600 text-white lg:text-[20px] text-sm font-bold py-2 px-4 rounded-md"
-              >
-                Join Us!
-              </Link>
-            </div>
-          </div>
-        </div>
+            key={index}
+            className="w-full h-full flex-shrink-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+        ))}
       </div>
-    </main>
+
+      {/* Static Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#000000a0] to-[#080b54e0] flex flex-col items-center justify-center text-center p-6 lg:p-16 z-10">
+        <p className="text-white text-3xl lg:text-5xl font-extrabold tracking-wide mb-2 lg:mb-4">
+          ITTA
+        </p>
+        <TypeAnimation
+          sequence={[
+            "Explore your journey on Machine Learning",
+            1000,
+            "Explore your journey on Artificial Intelligence",
+            1000,
+            "Explore your journey on programming",
+            1000,
+            "Explore your journey on Software Development",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ fontSize: "2em", display: "inline-block", color:"#db2777", fontWeight: "bold"   }}
+          repeat={Infinity}
+        />
+        <p className="text-white lg:text-lg text-base max-w-3xl mx-auto mb-6">
+          Join a community of tech enthusiasts and lifelong learners eager
+          to explore, build, and master new skills in cutting-edge
+          technologies. Whether you're into coding, design, or digital
+          marketing, we provide top-notch courses to fuel your passion.
+        </p>
+        <Link
+          to={"/signup"}
+          className="bg-pink-600 hover:bg-pink-700 text-white lg:text-lg text-sm font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          Join Us!
+        </Link>
+      </div>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ export const navs  = [
         link:"/Blog",
     },
     {
-        title:"Sign In  ",
+        title:"Login  ",
         link:"/Login",
     },{
         title:"Register ",
