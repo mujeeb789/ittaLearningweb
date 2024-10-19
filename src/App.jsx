@@ -21,12 +21,12 @@ const App = () => {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="/Signup" element={<Signup />} />
-            <Route path="/Courses" element={<Courses />} />
-            <Route path="/Blog" element={<Blogs />} />
-            <Route path="/Contacts" element={<Contacts />} />
-            <Route path="/Team" element={<Team />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/blog" element={<Blogs />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/team" element={<Team />} />
           </Routes>
         </main>
         <Footer />

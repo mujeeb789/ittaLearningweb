@@ -5,25 +5,30 @@ export const navs  = [
     },
     {
         title:"Courses",
-        link:"/Courses",
+        link:"/courses",
     },
     {
         title:"Contacts",
-        link:"/Contacts",
+        link:"/contacts",
     },{
         title:"Team ",
-        link:"/Team",
+        link:"/team",
+    },
+    {
+
+        title:"Books",
+        link:"/books",
     },
     {
         title:"Blog ",
-        link:"/Blog",
+        link:"/blog",
     },
     {
         title:"Login  ",
-        link:"/Login",
+        link:"/login",
     },{
         title:"Register ",
-        link:"/Signup",
+        link:"/signup",
     },
     
 ]
