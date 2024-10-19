@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        <div className="sticky top-0 z-20">
+        <div className="fixed   z-20">
         <Header />
 
         </div>

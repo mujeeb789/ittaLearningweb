@@ -1,6 +1,7 @@
 import linux from "../assets/images/linux.jpg";
 export const teams = [
   {
+    id:1,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -13,6 +14,7 @@ export const teams = [
     },
   },
   {
+    id:2,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -25,6 +27,7 @@ export const teams = [
     },
   },
   {
+    id:3,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -37,6 +40,7 @@ export const teams = [
     },
   },
   {
+    id:4,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -49,6 +53,7 @@ export const teams = [
     },
   },
   {
+    id:5,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -61,6 +66,7 @@ export const teams = [
     },
   },
   {
+    id:6,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -73,6 +79,7 @@ export const teams = [
     },
   },
   {
+    id:7,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -85,6 +92,7 @@ export const teams = [
     },
   },
   {
+    id:8,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -97,6 +105,7 @@ export const teams = [
     },
   },
   {
+    id:9,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,
@@ -109,6 +118,7 @@ export const teams = [
     },
   },
   {
+    id:10,
     name: "Adoche",
     expertise: "UI/UX ",
     image: linux,

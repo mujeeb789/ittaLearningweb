@@ -3,12 +3,18 @@ import { navs } from "../constants/Navs";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.jpeg";
 import logo1 from "../assets/images/logo.png";
-
+import { useLocation } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [path, setPath] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    setPath(location.pathname);
+  }, [location]);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -25,24 +31,18 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolling ? "bg-[#080a54] rounded-b-3xl shadow-lg" : "bg-transparent"
+      className={`fixed top-0 left-0  w-full z-50 transition-all duration-500 ${
+        isScrolling && path === "/"
+          ? "bg-[#080a54] rounded-b-3xl shadow-lg"
+          : path != "/"
+          ? "bg-[#080a54] "
+          : "bg-transparent"
       } text-white`}
     >
       <div className="container mx-auto flex items-center justify-between px-2 py-3 h-[8vh]">
-        {/* Mobile and Tablet Menu Button */}
-        <button className="md:hidden" onClick={toggleSidebar}>
-          <BsThreeDotsVertical size={24} />
-        </button>
-
         {/* Logo */}
         <div className="flex items-center mx-auto md:mx-0">
-          <img
-            alt="Logo"
-            src={logo1}
-            width={180}
-            className="object-contain"
-          />
+          <img alt="Logo" src={logo1} width={180} className="object-contain" />
         </div>
 
         {/* Desktop and Tablet Navigation */}
@@ -101,6 +101,9 @@ function Header() {
             onClick={toggleSidebar}
           ></div>
         )}
+        <button className="md:hidden" onClick={toggleSidebar}>
+          <BsThreeDotsVertical size={24} />
+        </button>
       </div>
     </header>
   );

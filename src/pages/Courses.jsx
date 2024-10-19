@@ -1,10 +1,13 @@
 import React from "react";
+import { coursesOffered } from "../constants/courses";
 
 function Courses() {
   return <main className="h-[100vh] w-[100vw]">
-        <p>
-            Hello world
-        </p>
+        <div>
+          
+          padding
+          
+        </div>
   </main>;
 }
 
