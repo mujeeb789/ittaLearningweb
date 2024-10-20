@@ -20,8 +20,8 @@ export const navs  = [
         link:"/books",
     },
     {
-        title:"Cheat Sheet ",
-        link:"/cheatsheets",
+        title:"Blog ",
+        link:"/blog",
     },
     {
         title:"Login  ",
