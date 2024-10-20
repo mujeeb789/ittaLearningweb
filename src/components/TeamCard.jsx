@@ -4,18 +4,20 @@ import { Link } from "react-router-dom";
 
 function TeamCard({ team }) {
   return (
-    <main className="lg:w-[20%] w-[40%] md rounded-lg hover:shadow-2xl pb-5 my-2 shadow-md flex items-center overflow-hidden gap-2 flex-col">
+    <main className="lg:w-[20%] w-[40%] md rounded-lg hover:shadow-2xl  my-2 shadow-md md:flex items-center overflow-hidden gap-2 ">
       <Link to={"/team"}>
-        <div className="h-fit w-full overflow-hidden ">
+        <div className=" w-full  ">
           <img
             src={team.image}
-            width={150}
+            width={250}
             height={250}
             className=" transition-all duration-300 w-full h-full hover:scale-125"
           />
         </div>
       </Link>
-      <div>
+      <div className="px-5 py-5 md:flex flex-col gap-5">
+        <div className=" ">
+
         <p>{team.name}</p>
 
         <p>{team.expertise}</p>
@@ -34,6 +36,7 @@ function TeamCard({ team }) {
           <FaTwitter />
         </Link>
       </div>
+        </div>
     </main>
   );
 }

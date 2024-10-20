@@ -45,7 +45,7 @@ function Header() {
         </div>
 
         {/* Desktop and Tablet Navigation */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden lg:flex space-x-6">
           {navs.map((item, index) => (
             <NavLink
               key={index}
@@ -100,7 +100,7 @@ function Header() {
             onClick={toggleSidebar}
           ></div>
         )}
-        <button className="md:hidden" onClick={toggleSidebar}>
+        <button className="lg:hidden" onClick={toggleSidebar}>
           <BsThreeDotsVertical size={24} />
         </button>
       </div>

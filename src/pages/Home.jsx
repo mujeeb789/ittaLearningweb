@@ -22,8 +22,8 @@ function Home() {
       <TeamComponent />
 
       
-      <div className="flex justify-center w-full items-center  flex-col">
-        <p>
+      <div className="flex justify-center mt-20 w-full items-center  flex-col">
+        <p className="text-[#080a54] text-3xl font-bold">
           Reviews from Students
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
