@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={`categories/${"womens-clothing"}`}
+                  to="/cheatsheets"
                   className="hover:underline"
                 >
                   CheatSheets
