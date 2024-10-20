@@ -9,6 +9,7 @@ import Courses from "./pages/Courses";
 import Blogs from "./pages/Blogs";
 import Contacts from "./pages/Contacts";
 import Team from "./pages/Team";
+import CheatSheetPage from "./pages/Blogs";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/blog" element={<Blogs />} />
+            <Route path="/cheatsheets" element={<CheatSheetPage />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/team" element={<Team />} />
           </Routes>
