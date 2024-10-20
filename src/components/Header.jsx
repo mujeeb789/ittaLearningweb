@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navs } from "../constants/Navs";
-import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.jpeg";
+import {NavLink} from "react-router-dom";
 import logo1 from "../assets/images/logo.png";
 import { useLocation } from "react-router-dom";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -31,9 +30,9 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0  w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 py-2 w-full z-50 transition-all duration-500 ${
         isScrolling && path === "/"
-          ? "bg-[#080a54] rounded-b-3xl shadow-lg"
+          ? "bg-[#080a54]  shadow-lg"
           : path != "/"
           ? "bg-[#080a54] "
           : "bg-transparent"

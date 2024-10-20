@@ -28,28 +28,58 @@ const Footer = () => {
       <div className="container mx-auto">
         {/* Grid Layout for Footer Sections */}
         <div className="md:grid flex px-4  flex-wrap items-center justify-center gap-x-10 gap-y-10  lg:grid-cols-auto md:grid-cols-4 md:gap-8 text-gray-700">
-          {/* Customer Service Section */}
-
-          <img src={logo} width={150} />
-
-          <div>
-            
-          <div className="text-white">
-            <h3 className="text-lg font-semibold mb-4">Contacts</h3>
-            <h2 className="flex items-center gap-2 my-3">
-            <IoMail />
-
-            <p className="text-white">shool.itta@gmail.com</p>
-            </h2>
+        <div className="text-white ">
+            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <ul className="text-sm space-y-2">
+              <li>
+                <Link
+                  to={`categories/${"electronics"}`}
+                  className="hover:underline"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={`categories/${"womens-clothing"}`}
+                  className="hover:underline"
+                >
+                  CheatSheets
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={`categories/${"smartphones"}`}
+                  className="hover:underline"
+                >
+                  Webinars
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={`categories/${"vehicle"}`}
+                  className="hover:underline"
+                >
+                  Answers
+                </Link>
+              </li>
+            </ul>
           </div>
+
           <div>
-            
-            <div className="flex text-white  gap-2 items-center my-3">
-              
-           <FaWhatsapp /> <p>+2347037411315 </p>
+            <div className="text-white">
+              <h3 className="text-lg font-semibold mb-4">Contacts</h3>
+              <h2 className="flex items-center gap-2 my-3">
+                <IoMail />
+
+                <p className="text-white">shool.itta@gmail.com</p>
+              </h2>
             </div>
-          </div>
-
+            <div>
+              <div className="flex text-white  gap-2 items-center my-3">
+                <FaWhatsapp /> <p>+2347037411315 </p>
+              </div>
+            </div>
           </div>
           {/* Quick Links Section */}
           <div className="text-white ">
@@ -90,12 +120,11 @@ const Footer = () => {
             </ul>
           </div>
 
-        
-         
-
           {/* Social Media Section */}
           <div>
-            <h3 className="text-lg mt-[-70px] text-white font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-lg mt-[-70px] text-white font-semibold mb-4">
+              Follow Us
+            </h3>
             <div className="flex space-x-4 text-white ">
               {/* React Icons for Social Media */}
               <a href="#" aria-label="Facebook" className="hover:text-pink-600">
@@ -111,11 +140,7 @@ const Footer = () => {
               >
                 <FaInstagram className="h-6 w-6" />
               </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="hover:text-pink-600"
-              >
+              <a href="#" aria-label="Twitter" className="hover:text-pink-600">
                 <FaTwitter className="h-6 w-6" />
               </a>
             </div>
