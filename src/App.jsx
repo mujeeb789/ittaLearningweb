@@ -16,8 +16,7 @@ const App = () => {
     <Router>
       <div className="min-h-screen flex flex-col">
         <div className="fixed   z-20">
-        <Header />
-
+          <Header />
         </div>
         <main className="flex-1">
           <Routes>

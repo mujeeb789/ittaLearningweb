@@ -1,10 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
-import StudentReviewCard from "../components/StudentsReview";
-import { reviews } from "../constants/reviews";
+import { teams } from "../constants/Teams";
+import TeamCard from "../components/TeamCard";
+import { Link } from "react-router-dom";
+import TeamComponent from "../components/TeamComponent";
 import Banner from "../components/Banner";
 import CourseNav from "../components/CoursesComponent";
-import TeamComponent from "../components/TeamComponent";
+import { coursesOffered } from "../constants/courses";
+import StudentReviewCard from "../components/StudentsReview";
+import { reviews } from "../constants/reviews";
+import { motion } from "framer-motion";
 
 function Home() {
   const cardVariant = {
@@ -22,12 +26,7 @@ function Home() {
 
       {/* Team Section */}
       <TeamComponent />
-
-      <div className="flex justify-center mt-20 w-full items-center flex-col">
-        <p className="text-[#080a54] text-3xl font-bold">
-          Reviews from Students
-        </p>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
+      <div className=" flex overflow-scroll-x ">
           {reviews.map((review, index) => (
             <motion.div
               key={index}
@@ -36,12 +35,12 @@ function Home() {
               whileInView="visible" // Animate when in view
               viewport={{ once: true, amount: 0.2 }} // Trigger only once when 20% of the element is in view
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="w-full"
             >
               <StudentReviewCard review={review} />
             </motion.div>
           ))}
         </div>
-      </div>
     </main>
   );
 }
