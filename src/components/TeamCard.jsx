@@ -23,7 +23,7 @@ function TeamCard({ team,index }) {
             src={team.image}
             width={250}
             height={250}
-            className=" transition-all duration-300 w-full h-full hover:scale-125"
+            className=" transition-all duration-300 w-full h-full hover:scale-110"
           />
         </div>
       </Link>

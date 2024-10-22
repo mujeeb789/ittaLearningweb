@@ -1,4 +1,7 @@
 import course from "../assets/images/course.jpeg";
+import devops from "../assets/images/devops.png";
+import cyber from "../assets/images/cyber.webp";
+
 import machine from "../assets/images/machine.jpg"
 
 
@@ -29,7 +32,7 @@ export const coursesOffered = [
       instructor: "Alan Parker",
       duration: "8 weeks",
       category: "DevOps",
-      image:course
+      image:devops
 
     },
     {
@@ -39,7 +42,7 @@ export const coursesOffered = [
       instructor: "Emily Davis",
       duration: "6 weeks",
       category: "Security",
-      image:course
+      image:cyber
 
     },
     {
