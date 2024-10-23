@@ -4,6 +4,8 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore'; // Import Firestore
 import { getDatabase } from 'firebase/database'; // Import Realtime Database
 
+
+
 // Your Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDsneJ4QUmyEzgQcyikYpvBurkYmIF36uw",

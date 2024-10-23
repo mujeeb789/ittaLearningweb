@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "../firebase"; // Import Firebase auth and provider
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
-import logo from "../assets/images/logo.jpeg";
+import avatar from "../assets/images/avatar.png";
 const AuthForm = ({ type, onSubmit }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -43,13 +43,13 @@ const AuthForm = ({ type, onSubmit }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center mt-12 h-100 bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-bold mb-6">
           {type === "login" ? "Login" : "Sign Up"}
         </h2>
         <div className="w-full h-fit flex items-center justify-center mb-3 ">
-          <img src={logo} width={200} className="rounded-full  " />
+          <img src={avatar} width={200} className="rounded-full  " />
         </div>
         <form onSubmit={handleSubmit}>
           {type === "signup" && (
