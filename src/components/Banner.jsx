@@ -36,6 +36,7 @@ function Banner() {
 
       {/* Static Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#000000a0] to-[#080b54e0] flex flex-col items-center justify-center text-center p-6 lg:p-16 z-10">
+        
         <p className="text-white text-3xl lg:text-5xl font-extrabold tracking-wide mb-2 lg:mb-4">
           ITTA
         </p>

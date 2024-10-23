@@ -36,7 +36,7 @@ export   const reviews = [
         courseName: "React Development",
         reviewText:
           "Loved this course! It really made React clear and approachable, and I feel confident in building real-world applications now.",
-        rating: 5,
+        rating: 2,
         avatar: avatar,
       },
   ];

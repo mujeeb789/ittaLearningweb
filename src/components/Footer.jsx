@@ -33,7 +33,7 @@ const Footer = () => {
             <ul className="text-sm space-y-2">
               <li>
                 <Link
-                  to={`categories/${"electronics"}`}
+                  to="https://medium.com/@school.itta/about-us-c12f022cfad3?postPublishedType=repub"
                   className="hover:underline"
                 >
                   Blog
@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to={`categories/${"womens-clothing"}`}
+                  to="/cheatsheets"
                   className="hover:underline"
                 >
                   CheatSheets
@@ -72,7 +72,7 @@ const Footer = () => {
               <h2 className="flex items-center gap-2 my-3">
                 <IoMail />
 
-                <p className="text-white">shool.itta@gmail.com</p>
+                <Link to="https://medium.com/@school.itta/about-us-c12f022cfad3?postPublishedType=repub" className="text-white">shool.itta@gmail.com</Link>
               </h2>
             </div>
             <div>

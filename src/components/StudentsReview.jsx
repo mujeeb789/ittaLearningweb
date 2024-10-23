@@ -23,7 +23,7 @@ const StudentReviewCard = ({ review }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="  md:w-[20vw] w-full my-5 bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="flex items-center px-6 py-4">
         <img
           className="w-12 h-12 rounded-full object-cover mr-4"

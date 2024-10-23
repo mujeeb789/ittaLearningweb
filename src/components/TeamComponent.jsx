@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 import TeamCard from './TeamCard'
 
 function TeamComponent() {
+
+  const varient = {
+
+  }
+
   return (
     <div className="flex flex-col items-center  ">
      
@@ -18,11 +23,11 @@ function TeamComponent() {
       <div className="flex flex-wrap gap-8 w-full justify-center items-center">
         {teams.slice(0, 4).map((team, index) => (
           <TeamCard
-           key={index} team={team} />
+           key={index} team={team} index={index} />
         ))}
       </div>
     </div>
-    <Link to={"/Team"} className="px-4 py-2">
+    <Link to={"/Team"} className="px-4 text-pink-600 bg-[#080a54] font-bold rounded-md py-2">
       {" "}
       see more
     </Link>

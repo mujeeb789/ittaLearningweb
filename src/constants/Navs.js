@@ -21,13 +21,13 @@ export const navs  = [
     },
     {
         title:"Blog ",
-        link:"/blog",
+        link:"https://medium.com/@school.itta/about-us-c12f022cfad3?postPublishedType=repub",
     },
     {
-        title:"Login  ",
-        link:"/login",
+        title:"About ",
+        link:"/about",
     },{
-        title:"Register ",
+        title:"Register/Login",
         link:"/signup",
     },
     

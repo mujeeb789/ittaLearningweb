@@ -3,22 +3,23 @@ import { coursesOffered } from "../constants/courses";
 
 const CourseNav = () => {
   return (
-    <div className="container mx-auto p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="container  mx-auto p-6">
+      <div className="flex gap-5 ">
         {coursesOffered.map((course) => (
           <div
             key={course.id}
-            className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 hover:scale-105 bg-white"
+            className="overflow-hidden  rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 hover:scale-105 bg-white"
           >
             <img
               src={course.image}
               alt={course.title}
-              className="w-full h-48 md:h-64 object-cover"
+              className="w-full h-48 md:h-64 lg:h-64 xl:h-72 object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 transition-opacity duration-300 hover:bg-opacity-60">
-              <h3 className="text-white text-lg font-bold">{course.title}</h3>
-              <p className="text-white text-sm mt-2">{course.duration}</p>
-              <button className="bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-2 px-4 rounded-full mt-3 transition-all duration-300">
+            <div className="bg-[#080a54] p-4 flex flex-col justify-between transition-opacity duration-300 hover:bg-opacity-90">
+              <h3 className="text-pink-600 text-lg font-bold">{course.title}</h3>
+              <p className="text-white mt-2 text-sm">{course.description}</p>
+              <p className="text-gray-300 text-xs mt-2">{course.duration}</p>
+              <button className="bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-2 px-4 rounded-full mt-4 transition-all duration-300">
                 Learn More
               </button>
             </div>

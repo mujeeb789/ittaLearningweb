@@ -17,13 +17,22 @@ const CourseNav = () => {
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 transition-opacity duration-300 hover:bg-opacity-60">
               <h3 className="text-white text-lg font-bold">{course.title}</h3>
+              <p>
+                {
+                  course.description
+                }
+              </p>
               <p className="text-white text-sm mt-2">{course.duration}</p>
               <button className="bg-pink-600 hover:bg-pink-700 text-white text-sm font-bold py-2 px-4 rounded-full mt-3 transition-all duration-300">
-                Learn More
+                {
+                  course
+                }
               </button>
             </div>
           </div>
-        ))}
+        ))}f6
+        \
+
       </div>
     </div>
   );

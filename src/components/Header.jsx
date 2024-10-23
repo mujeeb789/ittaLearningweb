@@ -30,13 +30,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 py-2 w-full z-50 transition-all duration-500 ${
-        isScrolling && path === "/"
-          ? "bg-[#080a54]  shadow-lg"
-          : path != "/"
-          ? "bg-[#080a54] "
-          : "bg-transparent"
-      } text-white`}
+      className={`sticky top-0 left-0 py-2 w-full z-50 transition-all duration-500 bg-[#080a54] text-white`}
     >
       <div className="container mx-auto flex items-center justify-between px-2 py-3 h-[8vh]">
         {/* Logo */}
