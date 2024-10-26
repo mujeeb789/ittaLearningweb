@@ -6,7 +6,7 @@ import {fadeIn} from 'react-animations';
 const fadeInAnimation = keyframes`${fadeIn}`;
 
 const AnimatedParagraph = styled.p`
-  animation: ${fadeInAnimation} 6s delay-1000 ease-in-out;
+  animation: ${fadeInAnimation} 6s delay-[12s] ease-in-out;
 `;
 
 const About = () => {
@@ -20,13 +20,13 @@ const About = () => {
           <TypeAnimation
             sequence={[
               "ABOUT US", () => setCurrentSection("ABOUT US"), // Update section when ABOUT US is displayed
-              1000,
+              10000,
               "MISSION", () => setCurrentSection("MISSION"), // Update section when MISSION is displayed
-              1000,
+              8000,
               "VISION STATEMENT", () => setCurrentSection("VISION STATEMENT"), // Update section when VISION is displayed
-              1000,
+              8000,
               "OUR BELIEF", () => setCurrentSection("OUR BELIEF"), // Update section when OUR BELIEF is displayed
-              1000,
+              10000,
             ]}
             wrapper="span"
             speed={50}

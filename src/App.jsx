@@ -8,7 +8,8 @@ import Signup from "./pages/Signup";
 import Courses from "./pages/Courses";
 import Blogs from "./pages/Blogs";
 import Contacts from "./pages/Contacts";
-import About from "./pages/About";
+
+import Books from "./pages/Books";
 
 import Team from "./pages/Team";
 import CheatSheetPage from "./pages/CheatSheets";
@@ -24,7 +25,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
 
             <Route path="/signup" element={<Signup />} />
             <Route path="/courses" element={<Courses />} />
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/cheatsheets" element={<CheatSheetPage />} />
 
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/books" element={<Books />} />
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>
